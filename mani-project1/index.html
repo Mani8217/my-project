@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/main.css">
+  <title></title>
+</head>
+<body>
+ <div class="container">
+    
+  <div class="head">
+    <div class="head1 title"> <h1>Green Peace</h1> <img src="./images/bird.jpg" width="60px" height="60px" alt="bird"></div>
+
+    <div class="head2 nav">
+      <ul>
+        <li><a href="#">Profile</a></li>
+      <li><a href="#">History</a></li>
+      <li><a href="#">activities</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About Us</a></li>
+      
+      </ul>
+
+    </div>
+
+  </div>
+    
+  <div class="main1 main">
+   <div class="item1">
+     <section>
+      <h2>title1</h2>
+       <p>Today, the rate of extinction is occurring 1,000 to 10,000 <br>
+       faster because of human activity. The main modern causes of <br>
+       extinction are the loss and degradation of habitat (mainly <br>
+       deforestation), over exploitation (hunting, overfishing), <br>
+       invasive species, climate change, and nitrogen pollution</p>
+       <p class="rmore"><a href="#"><span onclick="showUp()">Read More..</span></a></p>
+       <div class="hidden">
+         <p>
+           ...<br>
+           Why are animals in danger of extinction?<br>
+           Image result for animals in danger of <br>
+           extinction reason Species become endangered <br>
+           for two main reasons: loss of habitat and <br>
+           loss of genetic variation. A loss of habitat can<br>
+            happen naturally. Dinosaurs, for instance, <br>lost their habitat
+             about 65 million years ago.
+         </p>
+       </div>
+       </section>
+      
+   </div>
+    <div class="item2">
+      <img src="./images/panda.jpg" width="250px" height="250px">
+      <br>
+      <br>
+          <p>While its numbers are slowly increasing,<br>
+             the giant panda remains one of the rarest<br>
+              and most endangered bears in the world</p>
+
+    </div>
+  </div>  
+
+  <div class="main2 main">
+
+
+
+  </div>
+
+  <div class="main3 main">
+
+
+
+  </div>
+    
+ <div>
+ <script>
+   function showUp(){
+     var x = document.querySelector(".hidden");
+     if (x.style.display==="none"){
+       x.style.display="block";
+     }else{
+       x.style.display="none";
+     }
+   }
+ </script>
+</body>
+</html>
