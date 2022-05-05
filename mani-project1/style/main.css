@@ -35,7 +35,7 @@ body {
   }
 }
 .head h1 {
-  color: darkgreen;
+  color: rgb(86, 190, 86);
 }
 .nav ul {
   list-style: none;
@@ -64,17 +64,17 @@ body {
   padding: 20px;
 }
 .main section {
-  width: 100%;
+  width: 90%;
   height: 500px;
   border: 2px solid rgb(114, 198, 247);
   padding: 30px;
   background-image: url("../images/green.jpg");
   background-size: cover;
-  box-shadow: 2px 2px 2px 2px rgb(114, 198, 247, 08),
-    2px 2px 2px 2px rgb(114, 198, 247, 08),
-    2px 2px 2px 2px rgb(114, 198, 247, 08),
-    2px 2px 2px 2px rgb(114, 198, 247, 08);
+  -webkit-box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
+  -moz-box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
+  box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
 }
+
 .item1 .rmore {
   text-align: right;
 }
@@ -84,6 +84,16 @@ body {
   text-decoration: none;
   color: darkgreen;
 }
+
+main .item2 {
+  max-width: 60%;
+}
+.main .item2 img {
+  border-radius: 150px;
+  -webkit-box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
+  -moz-box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
+  box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
+}
 .hidden {
   text-align: center;
   display: none;
@@ -91,9 +101,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-main .item2 {
-  max-width: 60%;
-}
-.main .item2 img {
-  border-radius: 150px;
+.invisible {
+  text-align: center;
+  display: none;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
