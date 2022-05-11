@@ -1,9 +1,65 @@
-<label for="firstname">First Name :</label>
-<input type="text" name="firstname" id="firstname">
-
-<label for="lastname">Last Name : </label>
-<input type="text" name="lastname" id="lastname">
- 
-<label for="email">Email Address</label>
-<input type="email" name="email" id="email">
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/main.css" />
+    <style>
+      body {
+        background-color: white;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <form method="post" action="fieldset.html" class="signup">
+      <fieldset>
+        <legend>personal information</legend>
+        <p>
+          <label for="firstname">First Name :</label>
+          <input type="text" name="firstname" id="firstname" class="text" />
+        </p>
+        <p>
+          <label for="lastname">Last Name : </label>
+          <input type="text" name="lastname" id="lastname" class="text" />
+        </p>
+        <p>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" class="text" />
+        </p>
+        <p>
+          <label for="password">Your password</label>
+          <input type="password" name="password" id="password" class="text" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Address Details</legend>
+        <p>
+          <label for="address1">Address line one : </label>
+          <input type="text" name="address1" id="address1" class="text" />
+        </p>
+        <p>
+          <label for="address2">Address line two : </label>
+          <input type="text" name="address2" id="address2" class="text" />
+        </p>
+        <p>
+          <label for="city">Town / city : </label>
+          <input type="text" name="city" id="city" class="text" />
+        </p>
+        <p>
+          <label for="zip">Zip / Post code : </label>
+          <input type="text" name="zip" id="zip" class="text" />
+        </p>
+      </fieldset>
+      <p>
+        <input
+          type="submit"
+          name="btnsubmit"
+          id="btnsubmit"
+          value="Sign Up"
+          class="btn"
+        />
+      </p>
+    </form>
+  </body>
+</html>
