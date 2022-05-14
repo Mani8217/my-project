@@ -24,11 +24,11 @@
           <input type="text" name="lastname" id="lastname" class="text" />
         </p>
         <p>
-          <label for="email">Email Address</label>
+          <label for="email">Email Address:</label>
           <input type="email" name="email" id="email" class="text" />
         </p>
         <p>
-          <label for="password">Your password</label>
+          <label for="password">Your password:</label>
           <input type="password" name="password" id="password" class="text" />
         </p>
       </fieldset>
@@ -58,8 +58,15 @@
           id="btnsubmit"
           value="Sign Up"
           class="btn"
+          onclick="sUpFunction()"
         />
       </p>
     </form>
+
+    <script>
+      function sUpFunction() {
+        alert("Thank you for joining us..");
+      }
+    </script>
   </body>
 </html>

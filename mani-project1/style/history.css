@@ -1,0 +1,13 @@
+.history-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+
+.history-container .item2 {
+  background-color: #efdbb1;
+  width: 35%;
+  padding: 30px;
+  border-radius: 30px;
+  font-family: hevetica, sans-serif;
+}

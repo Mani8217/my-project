@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/main.css" />
     <title></title>
     <style>
@@ -11,22 +12,31 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="showTime()">
     <div class="container">
       <div class="head">
         <div class="head1 title">
           <h1>Green Peace</h1>
-          <img src="./images/bird.jpg" width="60px" height="60px" alt="bird" />
+          <img src="./images/bird.jpg" width="60px" height="60px" alt="Greenpeace logo" />
+         
         </div>
+        
+        
 
-        <div class="head2 nav">
+
+       <div class="topnav" id="myTopnav"  onclick="toggleList()" >
+         <a href="#" > <i class="fa fa-bars"></i></a>
+       </div>
+
+
+          <div class="head2 nav"  >
           <ul>
-            <li class="tooltip">
+            <li class="tooltip" >
               <a href="#" class="first2">Profile</a>
               <span class="tooltiptext">information about our group</span>
             </li>
             <li class="tooltip">
-              <a href="#" class="first2">History</a>
+              <a href="history.html" class="first2">History</a>
               <span class="tooltiptext">hitory of our works</span>
             </li>
             <li class="tooltip">
@@ -47,8 +57,10 @@
                 join us in taking care of the world</span
               >
             </li>
-          </ul>
-        </div>
+            
+            </ul>
+          </div>
+        
       </div>
    <div class="ad">
         <div class="col1">
@@ -61,7 +73,7 @@
           /></a>
         </div>
         <div class="col2">
-          <a href=""
+          <a href="https://www.iaws-web.org/"
             ><img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6cT5So6pre4NXKRuI2MK5Vs8CTzDh7Wghow&usqp=CAU"
               alt="logo"
@@ -70,7 +82,7 @@
           /></a>
         </div>
         <div class="col3">
-          <a href=""
+          <a href="https://www.worldanimalprotection.org/"
             ><img
               src="https://gumlet.assettype.com/theceo%2Fimport%2F2019%2F09%2FWorld-Animal-Welfare-Day.jpg?w=1200&auto=format%2Ccompress&ogImage=true"
               alt="logo"
@@ -223,6 +235,8 @@
               </ul>
               <br><br>
               <img class="tree" src="./images/tree.jpg" alt="tree" width="100px" height="100px" >
+              <br><br><br>
+              <span id="time"></span>
           </div>
         </div>
       </div>
@@ -239,6 +253,25 @@
           element.style.display = "none";
         }
       }
+     function showTime(){
+       const date = new Date();
+       let h = date.getHours();
+       let m = date.getMinutes();
+       let s = date.getSeconds();
+       document.getElementById("time").innerHTML= h + ":" + m + ":" + s;
+     }
+
+
+     function toggleList() {
+     var x = document.querySelector(".nav");
+     if (x.style.display === "none"){
+       x.style.display ="block";
+     }else {
+       x.style.display = "none";
+     }
+     
+} 
+     
     </script>
   </body>
 </html>
