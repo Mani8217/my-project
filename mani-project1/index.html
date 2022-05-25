@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title></title>
 </head>
 
@@ -22,7 +23,7 @@
 
 
           <div class="headnav"  >
-          <ul>
+          <ul id="menu">
             <li class="tooltip" >
               <a href="#" class="first2">Profile |</a>
               <span class="tooltiptext">information about our group</span>
@@ -57,22 +58,32 @@
 
           <div class="ad">
         <div class="col1 col">
+          
           <a href="https://www.peta.org/international/"
-            ><img
+            >
+            <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Peta_logo.svg/368px-Peta_logo.svg.png"
               alt="logo"
               width="60px"
               height="60px"
           /></a>
+          <p>EU CITIZENS URGENT: Help PETA Save the Ban Against Cosmetics Tests on ...</p>
         </div>
         <div class="col2 col">
+         
           <a href="https://www.iaws-web.org/"
-            ><img
+            >
+            
+            <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6cT5So6pre4NXKRuI2MK5Vs8CTzDh7Wghow&usqp=CAU"
               alt="logo"
               width="60px"
               height="60px"
           /></a>
+           <p>
+The International Academy of Wood Science
+
+is a non-profit assembly of wood scientists, .....</p>
         </div>
         <div class="col3 col">
           <a href="https://www.worldanimalprotection.org/"
@@ -82,15 +93,17 @@
               width="60px"
               height="60px"
           /></a>
+          <p>Everyday billions of animals are experiencing unbearable cruelty. We tackle the root ...</p>
         </div>
         <div class="col4 col">
           <a href="http://bearproject.org/site/show/id/15"
-            ><img
+            ><img class="clear"
               src="https://media.4-paws.org/e/5/1/2/e512500484065774e5485bfb46f32d1f7bb04f4c/four_paws_4c.png"
               alt="logo"
               width="60px"
               height="60px"
           /></a>
+         
         </div>
       </div>
 
@@ -212,7 +225,7 @@
               
               </ul>
               
-              <img class="tree" src="./images/slide.jpg" alt="tree" width="100px" height="100px" >
+              
            </div>
           </div>
 
@@ -246,7 +259,29 @@
 </div>
            
  
-      
+     <div class="footer">
+       <div class="foot1">
+          <ul>
+          
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Email</a></li>
+           <li><a href="#">Telephone</a></li>
+           <li><a href="#">Fax</a></li>
+           <li><a href="#">Facebook</a></li>
+               <li><a href="#">Address</a></li>  
+          </ul>
+
+          <ul>
+             <li ><a href="#">Greenpeace Magazine</a></li>
+             <li ><a href="#">Live in Harmony</a></li>
+             <li ><a href="#">Save natur group</a></li>
+             <li ><a href="#">National Geografy</a></li>           
+          </ul>
+       </div>
+       <div class="foot2">
+
+       </div>
+     </div> 
 
         
 
@@ -293,6 +328,16 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+function toggleList() {
+  var x = document.querySelector(".headnav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 </script>
 
 </body>

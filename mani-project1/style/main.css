@@ -17,19 +17,34 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 20px;
-
-  background-image: url("./images/farm1.jpg");
+  justify-content: space-between;
+  background-image: url("../images/farm1.jpg");
   background-size: cover;
 }
 
 .head h1 {
   color: darkgreen;
 }
+.head img {
+  border-radius: 100px;
+}
 
 .headnav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.topnav {
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  padding: 10px;
+  display: none;
+}
+.topnav a:link,
+.topnav a:visited {
+  text-decoration: none;
+  color: black;
 }
 .headnav ul li {
   display: inline-block;
@@ -78,19 +93,32 @@ body {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   align-items: center;
-  text-align: center;
+  text-align: right;
   padding: 5px;
   background-color: white;
+  background-size: cover;
 
   animation-name: adbar;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   margin-bottom: 30px;
+  column-gap: 30px;
+}
+.col img {
+  width: 35%;
+  float: left;
+  text-align: center;
+  padding: 15px;
+}
+.col .clear {
+  clear: both;
+  overflow: auto;
 }
 
 .main {
   display: grid;
   grid-template-columns: 60% 40%;
+  row-gap: 50px;
 }
 .maincover {
   display: grid;
@@ -223,6 +251,13 @@ img {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+.footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #8189ab;
+  height: 400px;
+  width: 100%;
+}
 
 @keyframes fade {
   from {
@@ -233,11 +268,18 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px;
-  }
+.foot1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 40px;
+}
+.foot1 ul {
+  list-style: outside;
+}
+.foot1 li a:link,
+.foot1 li a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -251,49 +293,58 @@ img {
     margin-bottom: 80px;
     height: 400px;
   }
-  .head1 img {
-    margin-left: 50px;
-  }
+
   .main {
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     row-gap: 50px;
+    padding-left: 50px;
   }
   .container {
     row-gap: 15px;
   }
 
-  .nav {
+  .headnav {
     display: none;
     position: static;
   }
   .maincover {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
+    text-align: center;
   }
   .topnav {
     position: absolute;
     top: 0;
     right: 0;
+    display: block;
   }
   .topnav a {
     display: block;
   }
-  .nav ul {
+  .headnav ul {
     background-color: transparent;
     overflow: hidden;
   }
-  .nav ul li {
+  .headnav ul li {
     display: block;
     text-align: center;
   }
-  .nav ul a:link,
-  .nav ul a:visited {
+  .headnav ul a:link,
+  .headnav ul a:visited {
     color: white;
   }
 
-  .nav ul li:not(:last-child) {
+  .headnav ul li:not(:last-child) {
     border-bottom: 1px dotted white;
   }
   .head {
-    height: 350px;
+    height: 400px;
+  }
+  .text {
+    font-size: 11px;
+  }
+  .sidesec {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px dotted gray;
   }
 }
