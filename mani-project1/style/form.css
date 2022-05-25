@@ -7,7 +7,6 @@ form{
 }
 .signup input.text{
   color: #00008b;
-  background-color: #e3f2f7;
   border: 1px inset #00008b;
   width: 200px;
 }
@@ -17,7 +16,7 @@ form input.button {
   border: 1px outset #00008b;
 }
 form p {
-  clear: left;
+  clear:left;
   margin: 0;
   padding: 0;
   padding-top: 5px;
@@ -32,7 +31,7 @@ fieldset{
   margin-top: 30px;
   padding: 40px;
   width: 80%;
-  background-color: white;
+  ;
   
    
   
