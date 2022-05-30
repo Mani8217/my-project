@@ -10,20 +10,17 @@
 
 
 <body>
-<div class="head">
-  <div class="head1 title">
+
+  <header>
+          <div class="logo">
+
+
           <h1>Green Peace</h1>
           <img src="./images/llog.jfif" width="100px" height="100px" alt="Greenpeace logo" />
-         
-  </div>
-
-  <div class="topnav" id="myTopnav"  onclick="toggleList()" >
-         <a href="#" > <i class="fa fa-bars"></i></a>
-       </div>
-
-
-          <div class="headnav"  >
-          <ul id="menu">
+         </div>
+  
+       <nav id="headnav">
+          <ul >
             <li class="tooltip" >
               <a href="#" class="first2">Profile |</a>
               <span class="tooltiptext">information about our group</span>
@@ -52,11 +49,18 @@
             </li>
             
             </ul>
-          </div>
+          </nav>
+          
+            <button type="button">
+          <i class="fa fa-bars"></i>
+            </button>
+  
+         
 
-         </div>
-
-          <div class="ad">
+       
+      </div>
+   </header>
+   <div class="ad">
         <div class="col1 col">
           
           <a href="https://www.peta.org/international/"
@@ -67,7 +71,7 @@
               width="60px"
               height="60px"
           /></a>
-          <p>EU CITIZENS URGENT: Help PETA Save the Ban Against Cosmetics Tests on ...</p>
+          
         </div>
         <div class="col2 col">
          
@@ -80,10 +84,7 @@
               width="60px"
               height="60px"
           /></a>
-           <p>
-The International Academy of Wood Science
-
-is a non-profit assembly of wood scientists, .....</p>
+          
         </div>
         <div class="col3 col">
           <a href="https://www.worldanimalprotection.org/"
@@ -93,7 +94,7 @@ is a non-profit assembly of wood scientists, .....</p>
               width="70px"
               height="70px"
           /></a>
-          <p>Everyday billions of animals are experiencing unbearable cruelty. We tackle the root ...</p>
+          
         </div>
         <div class="col4 col">
           <a href="http://bearproject.org/site/show/id/15"
@@ -109,8 +110,8 @@ is a non-profit assembly of wood scientists, .....</p>
 
       <div class="maincover">
        
-       <div class="main">
-         <section>
+       <main>
+         <article>
                 <h2>title1</h2>
                 <p>
                   Today, the rate of extinction is occurring 1,000 to 10,000
@@ -123,8 +124,7 @@ is a non-profit assembly of wood scientists, .....</p>
                 
                   invasive species, climate change, and nitrogen pollution
                 </p>
-                <br />
-                <br />
+            
                 <p class="rmore">
                   <input type="button" onclick="showUp()" value="Read me..">
                 </p>
@@ -140,18 +140,19 @@ is a non-profit assembly of wood scientists, .....</p>
                     habitat about 65 million years ago.
                   </p>
                 
-              </section>
-              <section>
-              <img src="./images/panda.jpg" width="250px" height="250px" />
+              </article>
+
+              <article>
+              <img src="./images/panda.jpg" width="90%" height="200px" />
       
               <p>
                 While its numbers are slowly increasing,
                 the giant panda remains one of the rarest
                 and most endangered bears in the world
               </p>
-           </section>
+            </article>
 
-<section>
+            <article>
                 <h1>The Health Factor</h1>
                 <p id="ftext">
                   Even reducing meat intake has a protective effect.
@@ -177,12 +178,12 @@ is a non-profit assembly of wood scientists, .....</p>
                     -mental to your health.
                   </p>
                 
-              </section>
-              <section>
+            </article>
+              <article>
                <img
                 src="./images/images.jpg"
-                width="250px"
-                height="250px"
+                width="90%"
+                height="200px"
                 alt="sheep"
               />
               <p>
@@ -196,11 +197,15 @@ is a non-profit assembly of wood scientists, .....</p>
                 previous pain and threats.
               </p>
 
-             </section>
+              </article>
 
-           </div>
+             
+
+
+
+            </main>
            <div class="son2 sidesec">
-             <img  class="world" src="./images/earth.jpg" width="150px" height="150px" alt="the world"></img>
+             <img  class="world" src="./images/earth.jpg" width="100%" height="150px" alt="the world"></img>
             
             
              <ul>
@@ -224,14 +229,11 @@ is a non-profit assembly of wood scientists, .....</p>
                 <li><a href="#">Plant a tree.</a></li>
               
               </ul>
-              
+              <img src="./images/tree.jpg" width="100%" class="tree">
               
            </div>
-          </div>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
+            <div class="slideshow-container">
+           <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="./images/slide.jpg" style="width:100%">
   <div class="text">Caption Text</div>
@@ -257,7 +259,10 @@ is a non-profit assembly of wood scientists, .....</p>
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
-           
+
+          </div>
+
+       
  
      <div class="footer">
        <div class="foot1">
@@ -288,12 +293,45 @@ is a non-profit assembly of wood scientists, .....</p>
        </div >
         <div style="padding-left:30px;"><p>this page is made with <i class="fa fa-heart" style="font-size:24px; color:red"></i> <i>by Mani Shidfar.</i></p></div>
      </div> 
-
-        
-
-<div>
+       
 
 
+
+<menu>
+         <button type="button">close</button>
+            <li >
+              <a href="#" >Profile</a>
+             
+            </li>
+            <li>
+              <a href="history.html" class="first2">History</a>
+              
+            </li>
+            <li>
+              <a href="#">activities</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="form.html">Sign Up</a>
+              
+            </li>
+            
+            <li>
+              <a href="#">new link</a>
+            </li>
+
+        <li><a href="#">new link</a></li>  
+
+        <li><a href="#">new link</a></li>
+        <li><a href="#">new link</a></li>
+        <li><a href="#">new link</a></li>
+        <li><a href="#">new link</a></li>
+        <li><a href="#">new link</a></li>
+        <li><a href="#">new link</a></li>
+        <li><a href="#">new link</a></li>
+          </menu>
 
 <script >
   
@@ -335,15 +373,23 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-function toggleList() {
-  var x = document.querySelector(".headnav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+
+const button =document.querySelector('button');
+button.addEventListener('click' , openMenu);
+
+function openMenu(event){
+  document.body.classList.add('menu-open');
 }
 
+//element 
+const closeButton = document.querySelector('menu button');
+
+//evento
+closeButton.addEventListener('click', closeMenu);
+
+function closeMenu(){
+  document.body.classList.remove('menu-open');
+}
 </script>
 
 </body>

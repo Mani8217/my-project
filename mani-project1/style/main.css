@@ -1,63 +1,34 @@
+@import url("header.css");
 * {
   box-sizing: border-box;
 }
+
 body {
-  background-color: #cbffb7;
+  background-color: #cbfdbe;
   margin: 0;
   padding: 0;
-}
-.container {
-  display: grid;
-  grid-template-columns: auto;
-  column-gap: 20px;
-  row-gap: 30px;
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
 }
 
-.head {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 20px;
-  justify-content: space-between;
-  background-image: url("../images/farm1.jpg");
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-}
-
-.head h1 {
-  color: darkgreen;
-}
-.head img {
-  border-radius: 100px;
-}
-
-.headnav ul {
+header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.topnav {
-  font-weight: bold;
-  color: black;
-  font-size: 30px;
-  padding: 10px;
+header button {
   display: none;
+  padding: 8px;
+  margin: 10px;
 }
-.topnav a:link,
-.topnav a:visited {
-  text-decoration: none;
-  color: black;
-}
-.headnav ul li {
+
+header nav ul li {
   display: inline-block;
 }
-.headnav li a.first2:link {
+header nav li a.first2:link {
   font-size: 25px;
 }
-.headnav li a:link,
-.headnav li a:visited {
+header nav li a:link,
+header nav li a:visited {
   text-decoration: none;
   color: black;
   display: block;
@@ -66,13 +37,54 @@ body {
   font-size: 20px;
 }
 
-.headnav li a:hover {
+header nav li a:hover {
   color: black;
   font-size: 23px;
 }
-.headnav li:not(:last-child) {
+header nav li:not(:last-child) {
   margin-right: 15px;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../images/farm1.jpg");
+  background-size: cover;
+  height: auto;
+  padding: 20px;
+  border: 2px solid darkgreen;
+  margin: 0;
+}
+header .topnav {
+  display: none;
+}
+header .logo img {
+  border-radius: 100px;
+  margin-left: 35px;
+}
+header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: auto;
+}
+header ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+header li a:link,
+header li a:visited {
+  text-decoration: none;
+  color: black;
+  display: block;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+header li a:hover {
+  color: black;
+  font-size: 23px;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -94,36 +106,26 @@ body {
 
 .ad {
   width: 100%;
-  height: 80px;
-  display: grid;
-
-  grid-template-columns: 25% 25% 25% 25%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   text-align: right;
   padding: 5px;
   background-color: orange;
-  border: 2px solid black;
+
   background-size: cover;
   position: sticky;
   top: 0;
+
   z-index: 1;
-  animation-name: adbar;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  margin-bottom: 30px;
-  column-gap: 30px;
+  margin: 0;
 }
 .col img {
-  float: left;
-  text-align: center;
   padding: 15px;
 }
-.col .clear {
-  clear: both;
-  overflow: auto;
-}
 
-.main {
+main {
   display: grid;
   grid-template-columns: 60% 40%;
   row-gap: 50px;
@@ -131,11 +133,13 @@ body {
 .maincover {
   display: grid;
   grid-template-columns: 80% 20%;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+  background-color: #cbfdbe;
+  padding: 30px;
 }
-.main section {
+main article {
   width: 80%;
-  height: 500px;
+  height: auto;
   border: 2px solid rgb(114, 198, 247);
   padding: 30px;
   background-image: url("../images/green.jpg");
@@ -145,17 +149,17 @@ body {
   box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
 }
 
-.main .rmore {
+main .rmore {
   text-align: right;
 }
 
-.main a:link,
-.main a:visited {
+main a:link,
+main a:visited {
   text-decoration: none;
   color: darkgreen;
 }
 
-.main img {
+main img {
   border-radius: 150px;
   -webkit-box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
   -moz-box-shadow: -1px 1px 5px 9px rgba(86, 190, 86, 0.75);
@@ -181,6 +185,7 @@ body {
   text-align: center;
   border-left: 2px solid darkgreen;
   padding: 10px;
+  width: auto;
 }
 
 .son2 .world {
@@ -213,6 +218,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
+  background-color: #cbfdbe;
   max-width: 100%;
   position: relative;
   margin: auto;
@@ -261,7 +267,7 @@ img {
 }
 .footer {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   background-color: #8189ab;
   height: 400px;
   width: 100%;
@@ -276,33 +282,48 @@ img {
   }
 }
 
-.foot1 {
+footer {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   padding: 40px;
+  background-color: #8189ab;
 }
-.foot1 ul {
+footer ul {
   list-style: outside;
 }
-.foot1 li a:link,
-.foot1 li a:visited {
+footer li a:link,
+footer li a:visited {
   color: white;
   text-decoration: none;
+}
+menu {
+  display: none;
+  list-style: none;
+}
+
+menu li {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+menu li a:link,
+menu li a:visited {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 500px) {
   .ad {
     display: none;
   }
-  .head {
-    grid-template-columns: auto;
+  header {
     align-items: flex-start;
     text-align: left;
     margin-bottom: 80px;
     height: 400px;
   }
 
-  .main {
+  main {
     grid-template-columns: auto;
     row-gap: 50px;
     padding-left: 50px;
@@ -311,40 +332,39 @@ img {
     row-gap: 15px;
   }
 
-  .headnav {
+  header nav {
     display: none;
     position: static;
   }
   .maincover {
     grid-template-columns: 100%;
     text-align: center;
+    margin: 0;
   }
-  .topnav {
+  header button {
     position: absolute;
     top: 0;
     right: 0;
     display: block;
   }
-  .topnav a {
-    display: block;
-  }
-  .headnav ul {
+
+  header nav ul {
     background-color: transparent;
     overflow: hidden;
   }
-  .headnav ul li {
+  header nav ul li {
     display: block;
     text-align: center;
   }
-  .headnav ul a:link,
-  .headnav ul a:visited {
+  header nav ul a:link,
+  header nav ul a:visited {
     color: white;
   }
 
-  .headnav ul li:not(:last-child) {
+  header nav li:not(:last-child) {
     border-bottom: 1px dotted white;
   }
-  .head {
+  header {
     height: 400px;
   }
   .text {
@@ -354,5 +374,29 @@ img {
     margin-top: 50px;
     padding-top: 30px;
     border-top: 1px dotted gray;
+  }
+
+  body {
+    position: relative;
+  }
+  body menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -33.33%;
+    margin: 0;
+    padding: var(--base-space);
+    min-width: 33.33%;
+    border: 2px solid black;
+    background-color: orange;
+  }
+  body.menu-open menu {
+    display: block;
+    margin: 0;
+    padding: 40px;
+    min-width: 33.33%;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
 }
