@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
   <title></title>
 </head>
 
 
 <body>
+ 
 
   <header>
           <div class="logo">
@@ -73,6 +75,7 @@
           /></a>
           
         </div>
+   <div><p>The International Academy of Wood Science</p></div>
         <div class="col2 col">
          
           <a href="https://www.iaws-web.org/"
@@ -86,6 +89,8 @@
           /></a>
           
         </div>
+
+        <div><p>The International Academy of Wood Science</p></div>
         <div class="col3 col">
           <a href="https://www.worldanimalprotection.org/"
             ><img
@@ -96,6 +101,7 @@
           /></a>
           
         </div>
+        <div><p>The International Academy of Wood Science</p></div>
         <div class="col4 col">
           <a href="http://bearproject.org/site/show/id/15"
             ><img class="clear"
@@ -106,6 +112,7 @@
           /></a>
          
         </div>
+        <div><p>The International Academy of Wood Science</p></div>
       </div>
 
       <div class="maincover">
@@ -205,7 +212,7 @@
 
             </main>
            <div class="son2 sidesec">
-             <img  class="world" src="./images/earth.jpg" width="100%" height="150px" alt="the world"></img>
+             <img  class="world" src="./images/earth.jpg" width="200px" height="150px" alt="the world"></img>
             
             
              <ul>
@@ -229,7 +236,7 @@
                 <li><a href="#">Plant a tree.</a></li>
               
               </ul>
-              <img src="./images/tree.jpg" width="100%" class="tree">
+              <img src="./images/tree.jpg" width="200px" class="tree">
               
            </div>
             <div class="slideshow-container">
@@ -264,8 +271,8 @@
 
        
  
-     <div class="footer">
-       <div class="foot1">
+     <footer >
+       
           <ul>
           
            <li><a href="#">Contact</a></li>
@@ -282,21 +289,21 @@
              <li ><a href="#">Save natur group</a></li>
              <li ><a href="#">National Geografy</a></li>           
           </ul>
-       </div>
-       <div class="foot2">
+       
+       
           <div class="item1" style="padding:60px">
             <img src="./images/ENG.png" width="45px" style="padding-top:30px">
             <img src="./images/FRA.png" width="45px" style="padding-top:30px">
             <img src="./images/GER.png" width="45px" style="padding-top:30px">
           </div>
-          <div class="item2"></div>
-       </div >
-        <div style="padding-left:30px;"><p>this page is made with <i class="fa fa-heart" style="font-size:24px; color:red"></i> <i>by Mani Shidfar.</i></p></div>
+          
+        <div style="padding-left:30px;">
+          <p>this page is made with <i class="fa fa-heart" style="font-size:24px; color:red"></i> <i>by Mani Shidfar.</i></p></div>
      </div> 
        
+     </footer>
 
-
-
+ //this is a menu to hide or show the header navbar
 <menu>
          <button type="button">close</button>
             <li >
@@ -333,63 +340,7 @@
         <li><a href="#">new link</a></li>
           </menu>
 
-<script >
-  
-   function showUp() {
-        var element = document.querySelector("#hidden");
-        if (element.style.display === "none") {
-          element.style.display = "block";
-        } else {
-          element.style.display = "none";
-        }
-      };
-
-      function toggleContent() {
-        var element = document.getElementById("invisible");
-        if (element.style.display === "none") {
-          element.style.display = "block";
-        } else {
-          element.style.display = "none";
-        }
-      };
-
-      let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-
-const button =document.querySelector('button');
-button.addEventListener('click' , openMenu);
-
-function openMenu(event){
-  document.body.classList.add('menu-open');
-}
-
-//element 
-const closeButton = document.querySelector('menu button');
-
-//evento
-closeButton.addEventListener('click', closeMenu);
-
-function closeMenu(){
-  document.body.classList.remove('menu-open');
-}
+ <script src="./js/index.js" >
 </script>
 
 </body>
