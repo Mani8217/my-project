@@ -1,0 +1,159 @@
+* {
+  box-sizing: ;
+}
+@font-face {
+  font-family: myfont;
+  src: url("./font/heebo-ExtraBold.ttf");
+}
+@font-face {
+  font-family: semi;
+  src: url("./font/Heebo-SemiBold.ttf");
+}
+@font-face {
+  font-family: light;
+  src: url("./font/Heebo-Light.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0efef;
+}
+
+section.header {
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  height: 500px;
+  color: #f0efef;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.header h1 {
+  padding-top: 30px;
+  margin: 0;
+  font-family: myfont;
+  font-size: 24px;
+}
+
+.header p {
+  text-align: center;
+  color: #f0efef;
+  font-size: 24px;
+  font-family: verdana;
+  font-weight: semi;
+}
+.header p button {
+  background-color: #f9e42e;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  color: #121212;
+  font-family: myfont;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header button:hover {
+  border-right: 2px solid #121212;
+  border-bottom: 2px solid #121212;
+  font-size: 18px;
+}
+
+.container {
+  margin-left: 20%;
+
+  color: #121212;
+  padding: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f0efef;
+}
+.container h2 {
+  font-size: 24px;
+  font-family: semi;
+  line-height: 8px;
+}
+.container p {
+  font-family: light;
+  font-size: 13px;
+}
+.container ul {
+  font-size: 13px;
+  font-family: light;
+}
+
+.container li {
+  margin-bottom: 8px;
+}
+
+.container2 {
+  background-image: url("../images/testimonial-bg.jpg");
+  background-size: cover;
+  height: 285px;
+  color: #f0efef;
+  text-align: center;
+  padding-top: 25px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+
+.container2 p {
+  font-size: 18px;
+  font-family: light;
+}
+.container2 p #font {
+  font-family: semi;
+}
+
+.container2 #signup {
+  background-color: #f9e42e;
+  height: 100px;
+  padding: 20px 20px;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.container2 button {
+  padding: 8px 26px 8px 26px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 40px;
+  font-family: myfont;
+  cursor: pointer;
+  background-color: #033048;
+  color: beige;
+}
+.container2 button:hover {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #606161;
+  max-height: 300px;
+  margin-top: 0;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.footer h2 {
+  color: #f9e42e;
+  font-size: 24px;
+  font-family: semi;
+  margin: 0;
+}
+
+.footer #image2 {
+  margin-left: 20px;
+}
+
+.footer p {
+  color: #121212;
+  font-size: 9px;
+  font-family: semi;
+}
