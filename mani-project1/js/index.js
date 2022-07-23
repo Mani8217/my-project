@@ -18,7 +18,6 @@ function toggleContent() {
 
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -53,4 +52,17 @@ closeButton.addEventListener("click", closeMenu);
 
 function closeMenu() {
   document.body.classList.remove("menu-open");
+}
+
+const audioElement = document.querySelector("audio");
+window.addEventListener("load", playMusic);
+function playMusic() {
+  audioElement.play();
+}
+
+setInterval(myWatch, 1000);
+function myWatch() {
+  let d = new Date();
+  document.getElementById("watch").innerHTML =
+    d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
 }
