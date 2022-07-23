@@ -12,15 +12,15 @@
 
 <body>
  
-
+ <!--this is a header of my page and its display is flex-->
   <header>
           <div class="logo">
 
-
+          <!--page's logo-->
           <h1>Green Peace</h1>
           <img src="./images/llog.jfif" width="100px" height="100px" alt="Greenpeace logo" />
          </div>
-  
+         <!--headers navbar which each of its element has a tooltip-->
        <nav id="headnav">
           <ul >
             <li class="tooltip" >
@@ -52,7 +52,7 @@
             
             </ul>
           </nav>
-          
+          <!--this button's display is none ,when the screen'width  is less that 500px will be visible-->
             <button type="button">
           <i class="fa fa-bars"></i>
             </button>
@@ -62,6 +62,8 @@
        
       </div>
    </header>
+
+   <!--this is an advertisement strip that has a sticky position -->
    <div class="ad">
         <div class="col1 col">
           
@@ -117,6 +119,7 @@
 
       <div class="maincover">
        
+        <!--the manin or body of this page is defined here, and includes articles images and its display is grid-->
        <main>
          <article>
                 <h2>title1</h2>
@@ -169,10 +172,11 @@
                   death from these diseases. And what you don't eat can
                   also harm your health
                 </p>
+                <!--i define an event for my input to call a function to show rest of the txt-->
                 <p class="rmore">
                   <input type="button" onclick="toggleContent()" value="Readmore..">
                 </p>
-                
+                <!--this text is hidden ,and will be shown after its function is called-->
                   ...
                   <p id="invisible">
                     Is it healthy to stop eating meat?
@@ -211,6 +215,7 @@
 
 
             </main>
+            <!--this sidebar(of the main) is in here-->
            <div class="son2 sidesec">
              <img  class="world" src="./images/earth.jpg" width="200px" height="150px" alt="the world"></img>
             
@@ -237,26 +242,34 @@
               
               </ul>
               <img src="./images/tree.jpg" width="200px" class="tree">
-              
+              <audio controls autoplay style="margin-top:20px ;" id="audio1" >
+                <source src="./audio/jungle.wav" type="audio/wav">
+              </audio>
+              <h3 id="watch" style="text-align: center; margin-left:50px"></h3>
            </div>
-            <div class="slideshow-container">
-           <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="./images/slide.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="./images/slide1.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
+           
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="./images/slide2.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
+
+
+<div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+              <img src="./images/slide.jpg" style="width:100%">
+             <div class="text">Caption Text</div>
+          </div>
+
+         <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./images/slide1.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+         </div>
+
+         <div class="mySlides fade">
+           <div class="numbertext">3 / 3</div>
+           <img src="./images/slide2.jpg" style="width:100%">
+           <div class="text">Caption Three</div>
+         </div>
 
 </div>
 <br>
@@ -270,7 +283,7 @@
           </div>
 
        
- 
+    <!--my footer is made of three grids and each is a list-->
      <footer >
        
           <ul>
@@ -290,7 +303,7 @@
              <li ><a href="#">National Geografy</a></li>           
           </ul>
        
-       
+       <!---->
           <div class="item1" style="padding:60px">
             <img src="./images/ENG.png" width="45px" style="padding-top:30px">
             <img src="./images/FRA.png" width="45px" style="padding-top:30px">
@@ -303,7 +316,8 @@
        
      </footer>
 
- //this is a menu to hide or show the header navbar
+<!--this is my hidden menu created by adding a class to body tag by javascript change the postion of menu-->
+
 <menu>
          <button type="button">close</button>
             <li >
